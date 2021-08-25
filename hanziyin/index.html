@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
 	<meta charset='utf-8'>
+	<meta name="google" content="notranslate">
 	<meta name='viewport' content='width=device-width,initial-scale=1'>
 	<script src="hanziyin.js"></script>
 	<title>汉字引 v0.1</title>
 
-	<link rel='icon' type='image/png' href='favicon.png'>
+	<link rel='icon' type='image/png' href='icons/hanziyin_72.png'>
 	<link rel='stylesheet' href='global.css'>
 	<link rel='stylesheet' href='build/bundle.css'>
+	<link rel="manifest" href="hanziyin.webmanifest">
 
-	
 	<script defer src='build/bundle.js'></script>
+
+	<!-- 將public 檔案覆製到 kangxizidian/kxzd 下，並且以下兩個檔存在
+	字頭存在於康熙，即會出現連結 //-->
+	
+	<!--
+
+	<script src="../kxzd.js"></script> 
+	<script src="../filewordhead.js"></script> 
+	-->
+
+		<!-- 查字頭是否在康熙字典中，由 npm run build-for-hanziyin 產生  //-->
+		<!-- 康熙字典字頭所在的檔案 , 由 build-filewordhead.js 產生  //-->
+
+
 </head>
 
 <body>
