@@ -1,0 +1,14 @@
+.container {user-select: none;}
+.clickable{padding-left: 0.25em;padding-right: 0.25em}
+.clickable:hover {border-bottom: 1px blue solid;cursor: pointer}
+.input {font-size: 150%}
+.selected { background: silver;border-radius: 5px;}
+.replacecomp {font-size: 2em ;border:1px dotted silver }
+.replacecomp:hover {text-decoration: line-through; cursor: pointer}
+
+.derivable {font-weight: bold;}
+.msg {color: green}
+ruby {ruby-position: under;}
+
+.charmap-glyph {font-size: 48px; color: silver; height:48px}
+.charmap-codepoint{font-family: courier; font-weight: bold;}
