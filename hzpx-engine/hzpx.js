@@ -2582,7 +2582,8 @@
   var replaceReg = /\07([^\07]+)\07/g;
   var extractReplacable = (html2, opts = {}) => {
     const pair = opts.pair || "\uFE3B\uFE3C";
-    const cjkranges = (opts.cjk || "CDEFG").toUpperCase().split("").map((s) => "Ext" + s);
+    const cjk = opts.cjk || "ABCDEFG";
+    const cjkranges = cjk.toUpperCase().split("").map((s) => "Ext" + s);
     let out = "", nreplace = 0;
     const toReplace = [];
     const getReplaceId = (s) => {
@@ -2649,7 +2650,23 @@
   };
   var onOff = true;
   var onoff = (_onoff) => onOff = _onoff;
+  var renderSelector = (selector = ".hzpx") => {
+    const eles = document.querySelectorAll(selector);
+    eles.forEach((ele) => {
+      const t = ele.innerText;
+      if (t.length < 20 && t.match(/^[\u3400-\u9fff\ud400-\udfff]+$/)) {
+        Hzpx.render(ele);
+      } else {
+        Hzpx.inject(ele);
+      }
+    });
+  };
   var Hzpx = { addFontData, ready, drawPinx, loadFont, inject, render, onoff };
   if (typeof window !== "undefined" && !window.Hzpx)
     window.Hzpx = Hzpx;
+  setTimeout(async () => {
+    await Hzpx.ready();
+    renderSelector();
+  }, 100);
+  var hzpx_engine_default = Hzpx;
 })();
