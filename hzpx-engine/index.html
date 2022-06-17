@@ -32,13 +32,13 @@
   <body>
     <h2>汉字拼形 HTML 应用模块 演示</h2>
     <br/>本模块不依赖http，可以用於离线环境（如基於HTML+JS的电子书阅读软件）
-    <br/>检查 本页之HTML源代码会更清楚用法  <a target=_new href="https://github.com/accelon/hzpx-engine/">源代码</a>
+    <br/>按鼠標右键检查 本页之HTML源代码会更清楚用法。 欢迎到<a target=_new href="https://github.com/accelon/hzpx-engine/"> Github協作</a>
 
     <br/>1)替代式：将整个HTML元素替代为生成字形，适合字头或标题。语法 Hzpx.render(HTMLElement,text?:string)    
     <div id="bigfortune">看不見招財進寶</div>
     <div id="cjkextension">CJK 扩A㐀B𠀀C𪜀D𫝀E𫠠F𬺰G𰀀</div>
     <br/>
-    <br/>2)植入式：只生成将扩区字和组字，其余不变，适合內文。 Hzpx.inject(HTMLElement,{pair='︻︼', cjk='CDEFG'})
+    <br/>2)植入式：只生成扩区字和组字，其余不变，适合內文。 Hzpx.inject(HTMLElement,{pair='︻︼', cjk='CDEFG'})
     <br/>组字要用︻︼包起來。即︻初衤礻︼
     <div id="chu">「初」常被写成「︻初衤礻︼」</div>
     扩区字
