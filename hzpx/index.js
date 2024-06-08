@@ -1398,6 +1398,7 @@ var app = (function () {
 		return componentsOf(chars[chars.length-1]);
 	};
 	const isFontReady=()=>!!ptk$1;
+	const isDataReady=()=>cjkbmp.length&&cjkext.length;
 
 	const autoPinx=(ch,base)=>{
 		if (ch==base || !base) return ''
@@ -7023,36 +7024,36 @@ var app = (function () {
 
 	function get_each_context(ctx, list, i) {
 		const child_ctx = ctx.slice();
-		child_ctx[31] = list[i];
+		child_ctx[32] = list[i];
 		return child_ctx;
 	}
 
 	function get_each_context_1(ctx, list, i) {
 		const child_ctx = ctx.slice();
-		child_ctx[31] = list[i];
+		child_ctx[32] = list[i];
 		return child_ctx;
 	}
 
 	function get_each_context_2(ctx, list, i) {
 		const child_ctx = ctx.slice();
-		child_ctx[36] = list[i];
+		child_ctx[37] = list[i];
 		return child_ctx;
 	}
 
 	function get_each_context_3(ctx, list, i) {
 		const child_ctx = ctx.slice();
-		child_ctx[39] = list[i];
-		child_ctx[41] = i;
+		child_ctx[40] = list[i];
+		child_ctx[42] = i;
 		return child_ctx;
 	}
 
 	function get_each_context_4(ctx, list, i) {
 		const child_ctx = ctx.slice();
-		child_ctx[42] = list[i];
+		child_ctx[43] = list[i];
 		return child_ctx;
 	}
 
-	// (59:0) {#if ready}
+	// (65:0) {#if ready}
 	function create_if_block_7(ctx) {
 		let span;
 		let mounted;
@@ -7063,7 +7064,7 @@ var app = (function () {
 				span = element("span");
 				span.textContent = "🧪";
 				attr_dev(span, "class", "clickable");
-				add_location(span, file, 58, 11, 1837);
+				add_location(span, file, 64, 11, 1982);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, span, anchor);
@@ -7088,14 +7089,14 @@ var app = (function () {
 			block,
 			id: create_if_block_7.name,
 			type: "if",
-			source: "(59:0) {#if ready}",
+			source: "(65:0) {#if ready}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (148:0) {:else}
+	// (154:0) {:else}
 	function create_else_block_2(ctx) {
 		let img;
 		let img_src_value;
@@ -7115,9 +7116,9 @@ var app = (function () {
 				t2 = text("System Loading……in 10 seconds");
 				if (!src_url_equal(img.src, img_src_value = "hzpx.png")) attr_dev(img, "src", img_src_value);
 				attr_dev(img, "alt", "招財進寶");
-				add_location(img, file, 148, 0, 4752);
-				add_location(br0, file, 149, 0, 4785);
-				add_location(br1, file, 150, 0, 4804);
+				add_location(img, file, 154, 0, 4897);
+				add_location(br0, file, 155, 0, 4930);
+				add_location(br1, file, 156, 0, 4949);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, img, anchor);
@@ -7146,14 +7147,14 @@ var app = (function () {
 			block,
 			id: create_else_block_2.name,
 			type: "else",
-			source: "(148:0) {:else}",
+			source: "(154:0) {:else}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (64:0) {#if ready}
+	// (70:0) {#if ready}
 	function create_if_block_1(ctx) {
 		let input;
 		let button;
@@ -7250,18 +7251,18 @@ var app = (function () {
 				attr_dev(input, "maxlength", "25");
 				attr_dev(input, "size", "14");
 				attr_dev(input, "placeholder", "基字或构件");
-				add_location(input, file, 64, 0, 1971);
-				add_location(button, file, 64, 80, 2051);
-				add_location(br0, file, 65, 0, 2091);
+				add_location(input, file, 70, 0, 2116);
+				add_location(button, file, 70, 80, 2196);
+				add_location(br0, file, 71, 0, 2236);
 				attr_dev(span0, "title", "Frame 字框");
 				toggle_class(span0, "selected", /*frame*/ ctx[2]);
-				add_location(span0, file, 72, 0, 2273);
+				add_location(span0, file, 78, 0, 2418);
 				attr_dev(span1, "title", "Font 字型");
 				attr_dev(span1, "class", "clickable");
 				toggle_class(span1, "selected", /*showfont*/ ctx[8]);
-				add_location(span1, file, 74, 0, 2413);
-				add_location(br1, file, 82, 0, 2783);
-				add_location(br2, file, 95, 0, 3229);
+				add_location(span1, file, 80, 0, 2558);
+				add_location(br1, file, 88, 0, 2928);
+				add_location(br2, file, 101, 0, 3374);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, input, anchor);
@@ -7487,14 +7488,14 @@ var app = (function () {
 			block,
 			id: create_if_block_1.name,
 			type: "if",
-			source: "(64:0) {#if ready}",
+			source: "(70:0) {#if ready}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (60:0) {#if testbench}
+	// (66:0) {#if testbench}
 	function create_if_block(ctx) {
 		let testbench_1;
 		let current;
@@ -7535,14 +7536,14 @@ var app = (function () {
 			block,
 			id: create_if_block.name,
 			type: "if",
-			source: "(60:0) {#if testbench}",
+			source: "(66:0) {#if testbench}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (68:0) {:else}
+	// (74:0) {:else}
 	function create_else_block_1(ctx) {
 		let favorite;
 		let updating_value;
@@ -7598,14 +7599,14 @@ var app = (function () {
 			block,
 			id: create_else_block_1.name,
 			type: "else",
-			source: "(68:0) {:else}",
+			source: "(74:0) {:else}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (67:0) {#if message}
+	// (73:0) {#if message}
 	function create_if_block_6(ctx) {
 		let t;
 
@@ -7632,14 +7633,14 @@ var app = (function () {
 			block,
 			id: create_if_block_6.name,
 			type: "if",
-			source: "(67:0) {#if message}",
+			source: "(73:0) {#if message}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (76:0) {#if showfont}
+	// (82:0) {#if showfont}
 	function create_if_block_5(ctx) {
 		let each_1_anchor;
 		let each_value_4 = ensure_array_like_dev(/*fontfaces*/ ctx[12]);
@@ -7703,24 +7704,24 @@ var app = (function () {
 			block,
 			id: create_if_block_5.name,
 			type: "if",
-			source: "(76:0) {#if showfont}",
+			source: "(82:0) {#if showfont}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (77:0) {#each fontfaces as ff}
+	// (83:0) {#each fontfaces as ff}
 	function create_each_block_4(ctx) {
 		let span;
-		let t0_value = /*ff*/ ctx[42] + "";
+		let t0_value = /*ff*/ ctx[43] + "";
 		let t0;
 		let t1;
 		let mounted;
 		let dispose;
 
 		function click_handler_3() {
-			return /*click_handler_3*/ ctx[24](/*ff*/ ctx[42]);
+			return /*click_handler_3*/ ctx[24](/*ff*/ ctx[43]);
 		}
 
 		const block = {
@@ -7729,8 +7730,8 @@ var app = (function () {
 				t0 = text(t0_value);
 				t1 = space();
 				attr_dev(span, "class", "clickable");
-				toggle_class(span, "selected", /*ff*/ ctx[42] == /*fontface*/ ctx[4]);
-				add_location(span, file, 79, 0, 2676);
+				toggle_class(span, "selected", /*ff*/ ctx[43] == /*fontface*/ ctx[4]);
+				add_location(span, file, 85, 0, 2821);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, span, anchor);
@@ -7744,10 +7745,10 @@ var app = (function () {
 			},
 			p: function update(new_ctx, dirty) {
 				ctx = new_ctx;
-				if (dirty[0] & /*fontfaces*/ 4096 && t0_value !== (t0_value = /*ff*/ ctx[42] + "")) set_data_dev(t0, t0_value);
+				if (dirty[0] & /*fontfaces*/ 4096 && t0_value !== (t0_value = /*ff*/ ctx[43] + "")) set_data_dev(t0, t0_value);
 
 				if (dirty[0] & /*fontfaces, fontface*/ 4112) {
-					toggle_class(span, "selected", /*ff*/ ctx[42] == /*fontface*/ ctx[4]);
+					toggle_class(span, "selected", /*ff*/ ctx[43] == /*fontface*/ ctx[4]);
 				}
 			},
 			d: function destroy(detaching) {
@@ -7764,17 +7765,17 @@ var app = (function () {
 			block,
 			id: create_each_block_4.name,
 			type: "each",
-			source: "(77:0) {#each fontfaces as ff}",
+			source: "(83:0) {#each fontfaces as ff}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (84:0) {#each svgs as svg,idx}
+	// (90:0) {#each svgs as svg,idx}
 	function create_each_block_3(ctx) {
 		let span;
-		let raw_value = /*svg*/ ctx[39] + "";
+		let raw_value = /*svg*/ ctx[40] + "";
 		let span_title_value;
 		let mounted;
 		let dispose;
@@ -7782,8 +7783,8 @@ var app = (function () {
 		const block = {
 			c: function create() {
 				span = element("span");
-				attr_dev(span, "title", span_title_value = /*pinxUnits*/ ctx[14][/*idx*/ ctx[41]]);
-				add_location(span, file, 87, 0, 2930);
+				attr_dev(span, "title", span_title_value = /*pinxUnits*/ ctx[14][/*idx*/ ctx[42]]);
+				add_location(span, file, 93, 0, 3075);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, span, anchor);
@@ -7795,8 +7796,8 @@ var app = (function () {
 				}
 			},
 			p: function update(ctx, dirty) {
-				if (dirty[0] & /*svgs*/ 128 && raw_value !== (raw_value = /*svg*/ ctx[39] + "")) span.innerHTML = raw_value;
-				if (dirty[0] & /*pinxUnits*/ 16384 && span_title_value !== (span_title_value = /*pinxUnits*/ ctx[14][/*idx*/ ctx[41]])) {
+				if (dirty[0] & /*svgs*/ 128 && raw_value !== (raw_value = /*svg*/ ctx[40] + "")) span.innerHTML = raw_value;
+				if (dirty[0] & /*pinxUnits*/ 16384 && span_title_value !== (span_title_value = /*pinxUnits*/ ctx[14][/*idx*/ ctx[42]])) {
 					attr_dev(span, "title", span_title_value);
 				}
 			},
@@ -7814,23 +7815,23 @@ var app = (function () {
 			block,
 			id: create_each_block_3.name,
 			type: "each",
-			source: "(84:0) {#each svgs as svg,idx}",
+			source: "(90:0) {#each svgs as svg,idx}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (90:0) {#each replacables as comp}
+	// (96:0) {#each replacables as comp}
 	function create_each_block_2(ctx) {
 		let span;
-		let t_value = /*comp*/ ctx[36] + "";
+		let t_value = /*comp*/ ctx[37] + "";
 		let t;
 		let mounted;
 		let dispose;
 
 		function click_handler_4() {
-			return /*click_handler_4*/ ctx[25](/*comp*/ ctx[36]);
+			return /*click_handler_4*/ ctx[25](/*comp*/ ctx[37]);
 		}
 
 		const block = {
@@ -7838,7 +7839,7 @@ var app = (function () {
 				span = element("span");
 				t = text(t_value);
 				attr_dev(span, "class", "replacecomp");
-				add_location(span, file, 93, 0, 3148);
+				add_location(span, file, 99, 0, 3293);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, span, anchor);
@@ -7851,7 +7852,7 @@ var app = (function () {
 			},
 			p: function update(new_ctx, dirty) {
 				ctx = new_ctx;
-				if (dirty[0] & /*replacables*/ 2048 && t_value !== (t_value = /*comp*/ ctx[36] + "")) set_data_dev(t, t_value);
+				if (dirty[0] & /*replacables*/ 2048 && t_value !== (t_value = /*comp*/ ctx[37] + "")) set_data_dev(t, t_value);
 			},
 			d: function destroy(detaching) {
 				if (detaching) {
@@ -7867,14 +7868,14 @@ var app = (function () {
 			block,
 			id: create_each_block_2.name,
 			type: "each",
-			source: "(90:0) {#each replacables as comp}",
+			source: "(96:0) {#each replacables as comp}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (100:0) {#if value.length<2}
+	// (106:0) {#if value.length<2}
 	function create_if_block_4(ctx) {
 		let span;
 		let mounted;
@@ -7886,7 +7887,7 @@ var app = (function () {
 				span.textContent = "👪";
 				attr_dev(span, "title", "Members and Derived 成员及孳乳");
 				toggle_class(span, "selected", /*showinfo*/ ctx[3]);
-				add_location(span, file, 100, 0, 3373);
+				add_location(span, file, 106, 0, 3518);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, span, anchor);
@@ -7915,14 +7916,14 @@ var app = (function () {
 			block,
 			id: create_if_block_4.name,
 			type: "if",
-			source: "(100:0) {#if value.length<2}",
+			source: "(106:0) {#if value.length<2}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (115:0) {:else}
+	// (121:0) {:else}
 	function create_else_block(ctx) {
 		let a;
 		let t1;
@@ -7938,7 +7939,7 @@ var app = (function () {
 				t1 = space();
 				if (if_block) if_block.c();
 				if_block_anchor = empty();
-				add_location(a, file, 117, 0, 3806);
+				add_location(a, file, 123, 0, 3951);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, a, anchor);
@@ -7982,14 +7983,14 @@ var app = (function () {
 			block,
 			id: create_else_block.name,
 			type: "else",
-			source: "(115:0) {:else}",
+			source: "(121:0) {:else}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (104:0) {#if showinfo}
+	// (110:0) {#if showinfo}
 	function create_if_block_2(ctx) {
 		let t0;
 		let t1;
@@ -8146,14 +8147,14 @@ var app = (function () {
 			block,
 			id: create_if_block_2.name,
 			type: "if",
-			source: "(104:0) {#if showinfo}",
+			source: "(110:0) {#if showinfo}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (119:0) {#if showhelp}
+	// (125:0) {#if showhelp}
 	function create_if_block_3(ctx) {
 		let h30;
 		let t1;
@@ -8242,26 +8243,26 @@ var app = (function () {
 				t22 = text("5.首次使用孳乳会花几秒钟产生反向索引。由於索引只在内存，网页重载之后必须重建。\n");
 				br15 = element("br");
 				t23 = text("微信： Sukhanika ,  Gmail : yapcheahshen");
-				add_location(h30, file, 119, 0, 3865);
-				add_location(br0, file, 121, 0, 3906);
-				add_location(br1, file, 122, 0, 3949);
-				add_location(br2, file, 123, 0, 3978);
-				add_location(br3, file, 124, 0, 3991);
-				add_location(h31, file, 126, 0, 4003);
-				add_location(br4, file, 128, 0, 4043);
-				add_location(br5, file, 129, 0, 4089);
-				add_location(br6, file, 130, 0, 4124);
-				add_location(br7, file, 131, 0, 4153);
-				add_location(h32, file, 132, 0, 4218);
-				add_location(br8, file, 134, 0, 4264);
-				add_location(br9, file, 135, 0, 4296);
-				add_location(br10, file, 136, 0, 4356);
-				add_location(h33, file, 137, 0, 4404);
-				add_location(br11, file, 139, 0, 4472);
-				add_location(br12, file, 140, 0, 4517);
-				add_location(br13, file, 141, 0, 4558);
-				add_location(br14, file, 142, 0, 4636);
-				add_location(br15, file, 143, 0, 4682);
+				add_location(h30, file, 125, 0, 4010);
+				add_location(br0, file, 127, 0, 4051);
+				add_location(br1, file, 128, 0, 4094);
+				add_location(br2, file, 129, 0, 4123);
+				add_location(br3, file, 130, 0, 4136);
+				add_location(h31, file, 132, 0, 4148);
+				add_location(br4, file, 134, 0, 4188);
+				add_location(br5, file, 135, 0, 4234);
+				add_location(br6, file, 136, 0, 4269);
+				add_location(br7, file, 137, 0, 4298);
+				add_location(h32, file, 138, 0, 4363);
+				add_location(br8, file, 140, 0, 4409);
+				add_location(br9, file, 141, 0, 4441);
+				add_location(br10, file, 142, 0, 4501);
+				add_location(h33, file, 143, 0, 4549);
+				add_location(br11, file, 145, 0, 4617);
+				add_location(br12, file, 146, 0, 4662);
+				add_location(br13, file, 147, 0, 4703);
+				add_location(br14, file, 148, 0, 4781);
+				add_location(br15, file, 149, 0, 4827);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, h30, anchor);
@@ -8355,25 +8356,25 @@ var app = (function () {
 			block,
 			id: create_if_block_3.name,
 			type: "if",
-			source: "(119:0) {#if showhelp}",
+			source: "(125:0) {#if showhelp}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (105:0) {#each derives as gid}
+	// (111:0) {#each derives as gid}
 	function create_each_block_1(ctx) {
 		let glyph;
 		let current;
 
 		function func() {
-			return /*func*/ ctx[27](/*gid*/ ctx[31]);
+			return /*func*/ ctx[27](/*gid*/ ctx[32]);
 		}
 
 		glyph = new Glyph({
 				props: {
-					gid: /*gid*/ ctx[31],
+					gid: /*gid*/ ctx[32],
 					fontface: /*fontface*/ ctx[4],
 					onclick: func
 				},
@@ -8391,7 +8392,7 @@ var app = (function () {
 			p: function update(new_ctx, dirty) {
 				ctx = new_ctx;
 				const glyph_changes = {};
-				if (dirty[0] & /*derives*/ 1024) glyph_changes.gid = /*gid*/ ctx[31];
+				if (dirty[0] & /*derives*/ 1024) glyph_changes.gid = /*gid*/ ctx[32];
 				if (dirty[0] & /*fontface*/ 16) glyph_changes.fontface = /*fontface*/ ctx[4];
 				if (dirty[0] & /*derives*/ 1024) glyph_changes.onclick = func;
 				glyph.$set(glyph_changes);
@@ -8414,14 +8415,14 @@ var app = (function () {
 			block,
 			id: create_each_block_1.name,
 			type: "each",
-			source: "(105:0) {#each derives as gid}",
+			source: "(111:0) {#each derives as gid}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (108:0) {#each components as gid}
+	// (114:0) {#each components as gid}
 	function create_each_block(ctx) {
 		let br;
 		let glyph;
@@ -8429,7 +8430,7 @@ var app = (function () {
 
 		glyph = new Glyph({
 				props: {
-					gid: /*gid*/ ctx[31],
+					gid: /*gid*/ ctx[32],
 					derivable: true,
 					fontface: /*fontface*/ ctx[4]
 				},
@@ -8440,7 +8441,7 @@ var app = (function () {
 			c: function create() {
 				br = element("br");
 				create_component(glyph.$$.fragment);
-				add_location(br, file, 108, 0, 3627);
+				add_location(br, file, 114, 0, 3772);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, br, anchor);
@@ -8449,7 +8450,7 @@ var app = (function () {
 			},
 			p: function update(ctx, dirty) {
 				const glyph_changes = {};
-				if (dirty[0] & /*components*/ 8192) glyph_changes.gid = /*gid*/ ctx[31];
+				if (dirty[0] & /*components*/ 8192) glyph_changes.gid = /*gid*/ ctx[32];
 				if (dirty[0] & /*fontface*/ 16) glyph_changes.fontface = /*fontface*/ ctx[4];
 				glyph.$set(glyph_changes);
 			},
@@ -8475,14 +8476,14 @@ var app = (function () {
 			block,
 			id: create_each_block.name,
 			type: "each",
-			source: "(108:0) {#each components as gid}",
+			source: "(114:0) {#each components as gid}",
 			ctx
 		});
 
 		return block;
 	}
 
-	// (103:0) {#key value}
+	// (109:0) {#key value}
 	function create_key_block(ctx) {
 		let current_block_type_index;
 		let if_block;
@@ -8558,7 +8559,7 @@ var app = (function () {
 			block,
 			id: create_key_block.name,
 			type: "key",
-			source: "(103:0) {#key value}",
+			source: "(109:0) {#key value}",
 			ctx
 		});
 
@@ -8591,7 +8592,7 @@ var app = (function () {
 				t = space();
 				if_block1.c();
 				attr_dev(div, "class", "container");
-				add_location(div, file, 56, 0, 1745);
+				add_location(div, file, 62, 0, 1890);
 			},
 			l: function claim(nodes) {
 				throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8688,11 +8689,22 @@ var app = (function () {
 		let message = '';
 
 		// document.title="汉字拼形-库存字形"+glyphWikiCount();
+		let timer;
+
 		onMount(async () => {
-			setTimeout(
+			timer = setInterval(
 				function () {
-					$$invalidate(0, value = '邏羅寶貝𩀨從䞃致招');
-					$$invalidate(1, ready = true);
+					if (isDataReady()) {
+						setTimeout(
+							function () {
+								$$invalidate(0, value = '邏羅寶貝𩀨從䞃致招');
+								$$invalidate(1, ready = true);
+							},
+							2000
+						); //wait for data ready
+
+						clearInterval(timer);
+					}
 				},
 				1000
 			);
@@ -8775,6 +8787,7 @@ var app = (function () {
 			enumFontFace,
 			getLastComps,
 			gid2ch,
+			isDataReady,
 			Glyph,
 			TestBench: Testbench,
 			downloadSvg,
@@ -8783,6 +8796,7 @@ var app = (function () {
 			ready,
 			showhelp,
 			message,
+			timer,
 			svgs,
 			frame,
 			showfont,
@@ -8807,11 +8821,12 @@ var app = (function () {
 			if ('ready' in $$props) $$invalidate(1, ready = $$props.ready);
 			if ('showhelp' in $$props) $$invalidate(5, showhelp = $$props.showhelp);
 			if ('message' in $$props) $$invalidate(6, message = $$props.message);
+			if ('timer' in $$props) timer = $$props.timer;
 			if ('svgs' in $$props) $$invalidate(7, svgs = $$props.svgs);
 			if ('frame' in $$props) $$invalidate(2, frame = $$props.frame);
 			if ('showfont' in $$props) $$invalidate(8, showfont = $$props.showfont);
 			if ('showinfo' in $$props) $$invalidate(3, showinfo = $$props.showinfo);
-			if ('size' in $$props) $$invalidate(29, size = $$props.size);
+			if ('size' in $$props) $$invalidate(30, size = $$props.size);
 			if ('fontface' in $$props) $$invalidate(4, fontface = $$props.fontface);
 			if ('testbench' in $$props) $$invalidate(9, testbench = $$props.testbench);
 			if ('derives' in $$props) $$invalidate(10, derives = $$props.derives);
