@@ -1,0 +1,31 @@
+{
+    "name": "HanziPinXing",
+    "short_name": "hzpx",
+    "description": "Generate Chinese Glyph Dynamically from an Pinx Expression",
+    "icons": [
+        {
+            "src": "hzpx_192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "hzpx_72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "hzpx.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "hzpx_512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "theme_color": "#34a1ff",
+    "background_color": "#34a1ff"
+}
